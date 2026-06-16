@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zinger Burger</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+
+</head>
+
+<body>
+
+<div class="food-container">
+
+    <!-- 3D Model Section -->
+
+    <div class="viewer-section">
+
+        <h1>Zinger Burger</h1>
+
+
+        <model-viewer
+id="burgerModel"
+
+src="../models/burger.glb"
+
+camera-controls
+auto-rotate
+
+
+
+shadow-intensity="1"
+
+environment-image="neutral"
+
+style="width:100%;height:500px;">
+
+
+
+</model-viewer>
+
+
+
+
+<div class="buttons">
+    <button id="ar-btn" class="ar-btn">View In AR</button>
+    <button id="menu-btn">☰</button>
+</div>
+
+    </div>
+
+    <!-- Desktop Description -->
+
+    <div class="description desktop-description">
+
+        <h2>Description</h2>
+
+        <p>
+            Fresh crispy chicken burger
+            with cheese, lettuce and
+            special sauce.
+        </p>
+<br>
+        <h3>Price</h3>
+
+        <p>Rs.650</p>
+
+        <br>
+        <h3>Ingredients</h3>
+
+        <ul>
+
+            <li>Chicken 🧀</li>
+            <li>Cheese</li>
+            <li>Lettuce</li>
+            
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- FAKE AR MODE -->
+<div id="fake-ar" class="fake-ar hidden">
+
+    <div class="ar-topbar">
+        <button id="close-ar">✖ Exit</button>
+    </div>
+
+    <model-viewer
+        src="../models/burger.glb"
+        camera-controls
+        auto-rotate
+        style="width:100%;height:100%;"
+        environment-image="neutral"
+        shadow-intensity="1">
+    </model-viewer>
+
+</div>
+
+<!-- Mobile Sidebar -->
+
+<div id="sidebar">
+
+    <span id="close-btn">✖</span>
+
+    <h2>Description</h2>
+
+    <p>
+        Fresh crispy chicken burger
+        with cheese, lettuce and
+        special sauce.
+    </p>
+
+    <h3>Price</h3>
+
+    <p>Rs.650</p>
+
+    <h3>Ingredients</h3>
+
+    <ul>
+        
+        <li><i class="fa-solid fa-drumstick-bite"></i> Chicken</li>
+        <li><i class="fa-solid fa-drumstick-bite"></i> Cheese</li>
+        <li><i class="fa-solid fa-drumstick-bite"></i> Lettuce</li>
+        <li><i class="fa-solid fa-drumstick-bite"></i> Sauce</li>
+
+        <li>🍗 Chicken</li>
+        <li>🧀 Cheese</li>
+        <li>🥬 Lettuce</li>
+        <li>🌶 Sauce</li>
+        
+    </ul>
+
+
+
+
+
+
+
+    <div class="recommendations">
+
+    <h2>Recommended Foods</h2>
+
+    <div class="rec-grid">
+
+        <a href="pizza.html" class="rec-card">
+            <model-viewer src="../models/pizza.glb"
+                auto-rotate camera-controls>
+            </model-viewer>
+            <p>Pizza</p>
+        </a>
+
+        <a href="fries.html" class="rec-card">
+            <model-viewer src="../models/fries.glb"
+                auto-rotate camera-controls>
+            </model-viewer>
+            <p>Fries</p>
+        </a>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>

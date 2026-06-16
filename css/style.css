@@ -203,5 +203,82 @@ model-viewer{
 
 
 
+@media(max-width:768px){
+
+    #sidebar{
+        background:#0f0f0f;
+        color:white;
+        padding:25px;
+        line-height:1.8;
+        font-size:16px;
+    }
+
+    #sidebar h2{
+        font-size:22px;
+        font-weight:700;
+        margin-bottom:15px;
+        color:#ffffff;
+    }
+
+    #sidebar h3{
+        margin-top:15px;
+        margin-bottom:8px;
+        font-size:18px;
+        font-weight:600;
+        color:#ffcc00;
+    }
+
+    #sidebar p, #sidebar li{
+        margin-bottom:8px;
+        color:#ddd;
+    }
+
+    #sidebar ul{
+        padding-left:20px;
+    }
+}
+
+#sidebar{
+    background:#111 !important;
+    color:white !important;
+}
+
+
+
+
+.recommendations{
+    padding:30px;
+    color:white;
+}
+
+.rec-grid{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.rec-card{
+    width:200px;
+    background:#1a1a1a;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+}
+
+.rec-card model-viewer{
+    width:100%;
+    height:150px;
+}
+
+
+
+
+
+
+
+
+
 
 
