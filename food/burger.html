@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zinger Burger</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+
+</head>
+
+<body>
+
+<div class="food-container">
+
+    <!-- 3D Model Section -->
+
+    <div class="viewer-section">
+
+        <h1>Zinger Burger</h1>
+
+        <model-viewer
+        src="../models/burger.glb"
+        camera-controls
+        auto-rotate
+        ar
+        ar-modes="webxr scene-viewer quick-look">
+
+        </model-viewer>
+
+        <div class="buttons">
+
+            <button class="ar-btn">
+                View In AR
+            </button>
+
+            <button id="menu-btn">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Desktop Description -->
+
+    <div class="description desktop-description">
+
+        <h2>Description</h2>
+
+        <p>
+            Fresh crispy chicken burger
+            with cheese, lettuce and
+            special sauce.
+        </p>
+
+        <h3>Price</h3>
+
+        <p>Rs.650</p>
+
+        <h3>Ingredients</h3>
+
+        <ul>
+
+            <li>Chicken 🧀</li>
+            <li>Cheese</li>
+            <li>Lettuce</li>
+            
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- Mobile Sidebar -->
+
+<div id="sidebar">
+
+    <span id="close-btn">✖</span>
+
+    <h2>Description</h2>
+
+    <p>
+        Fresh crispy chicken burger
+        with cheese, lettuce and
+        special sauce.
+    </p>
+
+    <h3>Price</h3>
+
+    <p>Rs.650</p>
+
+    <h3>Ingredients</h3>
+
+    <ul>
+
+        <li>Chicken</li>
+        <li>Cheese</li>
+        <li>Lettuce</li>
+        <li>Sauce</li>
+
+    </ul>
+
+</div>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
