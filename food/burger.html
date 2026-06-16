@@ -26,21 +26,34 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
 
         <h1>Zinger Burger</h1>
 
-        <model-viewer
-        src="../models/burger.glb"
-        camera-controls
-        auto-rotate
-        ar
-        ar-modes="webxr scene-viewer quick-look">
 
-        </model-viewer>
+        <model-viewer
+id="burgerModel"
+
+src="../models/burger.glb"
+
+camera-controls
+auto-rotate
+
+ar
+ar-modes="webxr scene-viewer quick-look"
+
+shadow-intensity="1"
+
+environment-image="neutral"
+
+style="width:100%;height:500px;">
+
+<button slot="ar-button" id="ar-button">
+    View In AR
+</button>
+
+</model-viewer>
+
+
+
 
         <div class="buttons">
-
-            <button class="ar-btn">
-                View In AR
-            </button>
-
             <button id="menu-btn">
                 ☰
             </button>
