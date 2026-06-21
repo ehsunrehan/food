@@ -282,3 +282,33 @@ model-viewer{
 
 
 
+
+.top-actions{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:10px;
+}
+
+.ai-btn{
+    background:linear-gradient(45deg,#ff6600,#ff3300);
+    color:white;
+    border:none;
+    padding:10px 14px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.ai-btn:hover{
+    transform:scale(1.05);
+}
+
+
+
+
+
+
+
+
+
